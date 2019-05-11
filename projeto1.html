@@ -1,0 +1,19 @@
+<!DOCTYPE hmlt>
+<html>
+<body>   
+<head>
+<meta name="Loja 19,99">
+<title>Product App</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <div class="nav-bar"><h1>Loja 19,99</h1></div>
+        <div id="app">
+                <div class="cart">
+                    <p>Cart({{ cart.length }})</p>
+                </div>
+            <product :premium="premium" @add-to-cart="updateCart"></product>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script></script>
+</body>        
+</html>
